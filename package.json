@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "@types/node": "^16.15.0",
+    "typescript": "^4.8.0"
+  },
+  "engines": {
+    "node": "^16.15.0",
+    "npm": "^8.5.0"
+  },
+  "name": "rss-combination",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "postinstall": "npm run build && npm run test",
+    "test": "node ./dist/combination.test.js"
+  },
+  "type": "module"
+}
